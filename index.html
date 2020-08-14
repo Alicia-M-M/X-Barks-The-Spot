@@ -24,73 +24,93 @@
 
 <body>
 
-    <!-- hero-img -->
-
-
-    <!-- nav -->
-
-    <h2 class="text-center hero-text">X BARKS THE SPOT</h2>
-
-    <nav class="navbar sticky-top navbar-expand-sm navbar-light ">
+    <nav class="navbar fixed-top navbar-expand-sm">
         <div class="container-fluid">
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#mainNavBar">
                 <span class="navbar-toggler-icon"> </span>
             </button>
             <div class="collapse navbar-collapse" id="mainNavBar">
-                <ul class="navbar-nav ml-auto">
+                <h2 class="hero-text">X BARKS THE SPOT</h2>
+                <ul class="navbar-nav ml-auto ">
                     <li nav-item active><a class="nav-link" href="#">HOME</a></li>
-                    <li nav-item><a class="nav-link" data-toggle="modal" data-target="#exampleModal">MENU</a></li>
+                    <li nav-item><a class="nav-link" data-toggle="modal" data-target="#menuModalLong">MENU</a></li>
                     <li nav-item><a class="nav-link" href="#">CONTACT</a></li>
                     <li nav-item><a class="nav-link" href="#">ONLINE</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <header class="section-header tester-header bg-light">
-        <div class="container-fluid px-0">
-            <!-- <h2 class="text-center hero-text">X BARKS THE SPOT</h2> -->
-            <div class="hero-image">
-                <img src="images/header-final.jpg" alt="header-final">
-            </div>
-        </div>
-    </header>
 
+    <div class="hero-image">
+    </div>
 
     <!-- modal-menu -->
-    <div class="modal modal-dialog" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+        Launch demo modal
+    </button> -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="menuModalLong" tabindex="-1" role="dialog" aria-labelledby="menueModalLongTitle"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Cafe Menu</h5>
+                    <h5 class="modal-title" id="menuModalLongTitle">Cafe Menu</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    Why do we use it?
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+                    default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
+                    infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
+                    (injected humour and the like).
+                    Why do we use it?
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+                    default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
+                    infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
+                    (injected humour and the like).
+                    Why do we use it?
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+                    default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
+                    infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
+                    (injected humour and the like).
                 </div>
                 <div class="modal-footer">
                 </div>
             </div>
         </div>
     </div>
+
+
     <!-- main section -->
     <div class="container-fluid text-center">
         <!-- welcome section -->
         <div class="row row-margin-top">
-            <div class="col-12 d-flex justify-content-center welcome-wrapper">
+            <div class="col-12 px-0 d-flex justify-content-center">
                 <div class="col welcome-text">
                     <h1>Welcome</h1>
                 </div>
-                <div class="welcome-rectangle col-md-6 col-sm-8 col-10 bg-warning d-flex justify-content-center py-5">
+                <!-- <div class="welcome-rectangle col-md-6 col-sm-8 col-10 bg-warning d-flex justify-content-center py-5">
                     <h4>A PLACE FOR DOGS & HUMANS</h4>
                     <p>Contrary to popular belief, Lorem Ipsum is<br> not simply random text.<br>It has roots in a piece
                         of classical Latin <br>literature from 45 BC, making it over 2000 years old.<br>
                         45
                         BC, making it over 2000 <br>years old.
                     </p>
-                </div>
+                </div> -->
+                <img class="blueMountains welcome-divider-section" src="images/blue-mountains-larger.jpg" alt="">
             </div>
         </div>
         <!-- photo-section -->
@@ -124,23 +144,26 @@
         </div>
 
         <!-- sign-up-section -->
-        <div class="row row-margin-top">
-            <div class="col-12 bg-primary column-padding-extra">
-                <h4>SIGN UP TO OUR MONTHLY NEWSLETTER:</h4>
-                <button type="button" class="btn btn-warning">NEWS LETTER</button>
+        <div class="row row-margin-top row-divider-section">
+            <div class="col-12 px-0">
+                <img class="divider-section" src="images/blue-mountains.jpg" alt="">
+            </div>
+            <div class="col-12 divider-section-text">
+                <h4>SIGN UP TO OUR <br> MONTHLY NEWSLETTER:</h4>
+                <button type="button" class="btn orange-button-styling">NEWSLETTER</button>
             </div>
         </div>
         <!-- baked-treats-section -->
-        <div class="row row-margin-top">
-            <div class="col bg-success column-padding-extra">
+        <div class="row row-margin-top parallax-baked-treats">
+            <div class="col align-self-center">
                 <h4>BAKED TREATS</h4>
             </div>
         </div>
-        <!-- cakes-treats-section -->
-        <div class="row">
-            <div class="col bg-warning column-padding-extra">
+        <!-- cakes-treats-section ADD OWL CAROUSEL!!-->
+        <div class="row parallax-cakes">
+            <div class="col align-self-center">
                 <h4>CAKES</h4>
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row">
@@ -179,14 +202,17 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
-                </div>
+                </div> -->
             </div>
         </div>
-        <!-- sign-up-section -->
-        <div class="row row-margin-top">
-            <div class="col-12 bg-primary column-padding-extra">
-                <h4>SIGN UP TO OUR MONTHLY NEWSLETTER:</h4>
-                <button type="button" class="btn btn-warning">NEWS LETTER</button>
+        <!-- view-our-menu-section -->
+        <div class="row row-margin-top row-divider-section">
+            <div class="col-12 px-0">
+                <img class="divider-section" src="images/blue-mountains.jpg" alt="">
+            </div>
+            <div class="col-12 divider-section-text">
+                <h4>VIEW OUR FULL MENU:</h4>
+                <button type="button" class="btn orange-button-styling">MENU</button>
             </div>
         </div>
         <!-- testimonials-accordian -->
@@ -211,7 +237,7 @@
                                 <p></p>
                                 “I LOVE X BARKS THE SPOT. ALL MY BUDS COME HERE, AND WE HANG OUT. PLUS, THE TREATS ARE
                                 AMAZING.”
-                                 (translated from dog)
+                                (translated from dog)
                                 </p>
                             </div>
                         </div>
@@ -234,7 +260,7 @@
                                 <p></p>
                                 “I LOVE X BARKS THE SPOT. ALL MY BUDS COME HERE, AND WE HANG OUT. PLUS, THE TREATS ARE
                                 AMAZING.”
-                                 (translated from dog)
+                                (translated from dog)
                                 </p>
                             </div>
                         </div>
@@ -256,7 +282,7 @@
                                 <p></p>
                                 “I LOVE X BARKS THE SPOT. ALL MY BUDS COME HERE, AND WE HANG OUT. PLUS, THE TREATS ARE
                                 AMAZING.”
-                                 (translated from dog)
+                                (translated from dog)
                                 </p>
                             </div>
                         </div>
@@ -278,7 +304,7 @@
                                 <p></p>
                                 “I LOVE X BARKS THE SPOT. ALL MY BUDS COME HERE, AND WE HANG OUT. PLUS, THE TREATS ARE
                                 AMAZING.”
-                                 (translated from dog)
+                                (translated from dog)
                                 </p>
                             </div>
                         </div>
@@ -287,8 +313,8 @@
             </div>
         </div>
         <!-- map-and-contact -->
-        <div class="row row-margin-top">
-            <div class="col-12 col-md-8 mx-auto">
+        <div class="row row-margin-top parallax-footer">
+            <div class="col-12 col-md-8 mx-auto align-self-center">
                 <div class="row">
                     <div class="col-12 col-md-8 map order-last">
                         <iframe class="embed-responsive"
@@ -349,12 +375,14 @@
 
     <!-- the below below the footer -->
     <!-- javascript files -->
-    <script src="/script.js"></script>
+
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="/script.js"></script>
 
 
 </body>

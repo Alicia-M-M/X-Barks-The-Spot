@@ -20,60 +20,100 @@ p{
 
 /* general-styling */
 .row-margin-top{
-    margin-top: 10px;
+    margin-top: 0.6%;
 }
 
-.column-padding-extra{
+.orange-button-styling{
+    color:white;
+    height:60px;
+    padding:0 45px;
+    background-color:#F3911D;
+    border: 2px solid white;
+    border-bottom:7px solid white;
+    border-radius:0px;
+    font-weight: 700;
+    font-size:1.5rem;
+    letter-spacing: 4px;
+}
+
+/* .column-padding-extra{
     padding: 150px 0;
-}
+} */
 
-/* header and navbar */
-.hero-image img{
-    /* position: relative; */
+.divider-section{
     width:100%;
-    top:0;
+    max-height:400px;
+    object-fit:cover;
 }
 
-/* .hero-text{
-    text-align: center;
-    z-index: 9;
-    position: absolute;
+.divider-section-text{
+    position:absolute;
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.row-divider-section{
+    position:relative;
     color: white;
-} */
-
-/* .hero-text{
-    background-color: #d4e1e7;
-}  */
-
-.navbar{
-    width:100%;
-    background-color:rgba(0,0,0,.5);
 }
 
-.tester-header{
+/* header and navbar */
+.hero-text, .nav-link{
+    color:#1b2838;
+}
+
+.nav-link-white{
+    color:white;
+}
+.hero-image {
+    padding:0;
+    margin:0;
+    position: relative;
+    background:none;
+}
+.hero-image:after {
+    /* padding:0px; */
+    content : "";
+    display: block;
     /* position: absolute; */
-    top:-100px;
+    top: 0;
+    left: 0;
+    background-image: url("images/header-final.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    /* opacity : 0.2; */
+    /* z-index: -1; */
 }
 
+.nav-color-change{
+    background-color: #1b2838;
+    color: white;
+}
 /* menu-modal */
 .modal-content{
-    background-color: #1b2838;
-    color:white;
+    background-image:url("images/blue-mountains-larger.jpg");
+    
 }
 .modal-dialog{
     max-width:1228px;
 }
     
-/* welcome */
-.welcome-wrapper{
-    padding:200px 0;
-    background-color: #1b2838;
+.modal-footer, .modal-header{
+    border-radius:0px;
+    border:none;
 }
 
+.modal-content{
+    border-radius:0px;
+}
+
+/* welcome */
 .welcome-rectangle{
+    max-width:600px;
     flex-direction:column;
     position: relative;
 }
@@ -84,25 +124,47 @@ p{
     z-index:5;
 }
 
-/* photo gallery */ 
-    /* .photo-column-height{
-    height: 650px;
-}  */
+.welcome-divider-section{
+    width:100%;
+    max-height:800px;
+    object-fit:cover;
+}
 
+.blueMountains{
+    z-index: -1;
+}
+
+/* photo gallery */ 
 .photo-grid-image{
     width:100%;
-    height:650px;
+    height:40vw;
     object-fit:cover;
+    object-position: 50% 0%; 
 }
 .photo-grid-image-2{
     width:100%;
-    height:325px;
+    height:20vw;
     object-fit:cover;
+
 }
 
-/* cake-carousel */
+/* cake-baked-treats-carousels */
 .carousel-inner{
     padding:0 100px;
+}
+
+.parallax-baked-treats{
+    background-image: url("images/texture-tile-yellow.jpg");
+    height:340px;
+    background-attachment: fixed;
+    background-repeat:repeat;
+}
+
+.parallax-cakes{
+    background-image: url("images/texture-tile-orange.jpg");
+    height:340px;
+    background-attachment: fixed;
+    background-repeat:repeat;
 }
 
 /* testimonial accordian */
@@ -131,3 +193,9 @@ footer ul li a{
     max-width:300px;
 }
 
+.parallax-footer{
+    background-image: url("images/texture-tile-yellow.jpg");
+    height:980px;
+    background-attachment: fixed;
+    background-repeat:repeat;
+}
