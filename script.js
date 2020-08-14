@@ -1,2 +1,3 @@
-var a = 2;
-console.log(a);
+// $('.carousel').carousel({
+//     interval: 5000
+//   })
