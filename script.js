@@ -8,12 +8,10 @@ $(document).ready(function () {
         if (scroll >= 60) {
             //clearHeader, not clearheader - caps H
             $(".navbar").addClass("nav-color-change");
-            $(".nav-link").addClass("nav-link-white");
-            $(".hero-text").addClass("nav-link-white");
+            // $(".hero-text").hide();
         } else {
             $(".navbar").removeClass("nav-color-change");
-            $(".nav-link").removeClass("nav-link-white");
-            $(".hero-text").removeClass("nav-link-white");
+            // $(".hero-text").show();
         }
     }); //missing );
 
@@ -24,3 +22,4 @@ $(document).ready(function () {
 
     // document ready  
 });
+

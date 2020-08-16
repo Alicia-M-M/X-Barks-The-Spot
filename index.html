@@ -11,8 +11,7 @@
     <!-- stylesheets -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <!-- montserrat -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
     <!-- mr-dafoe -->
     <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
     <!-- styles -->
@@ -24,14 +23,34 @@
 
 <body>
 
-    <nav class="navbar fixed-top navbar-expand-sm">
+    <!-- <nav class="navbar fixed-top navbar-expand-sm">
         <div class="container-fluid">
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#mainNavBar">
                 <span class="navbar-toggler-icon"> </span>
             </button>
             <div class="collapse navbar-collapse" id="mainNavBar">
                 <h2 class="hero-text">X BARKS THE SPOT</h2>
-                <ul class="navbar-nav ml-auto ">
+                <ul class="navbar-nav mx-auto">
+                    <li nav-item active><a class="nav-link" href="#">HOME</a></li>
+                    <li nav-item><a class="nav-link" data-toggle="modal" data-target="#menuModalLong">MENU</a></li>
+                    <li nav-item><a class="nav-link" href="#">CONTACT</a></li>
+                    <li nav-item><a class="nav-link" href="#">ONLINE</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-image">
+    </div> -->
+    <h2 class="hero-text text-center">X BARKS THE SPOT</h2>
+
+    <nav class="navbar fixed-top navbar-expand-sm">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavBar">
+                <span class="navbar-toggler-icon"> </span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavBar">
+                <ul class="navbar-nav mx-auto">
                     <li nav-item active><a class="nav-link" href="#">HOME</a></li>
                     <li nav-item><a class="nav-link" data-toggle="modal" data-target="#menuModalLong">MENU</a></li>
                     <li nav-item><a class="nav-link" href="#">CONTACT</a></li>
@@ -43,6 +62,9 @@
 
     <div class="hero-image">
     </div>
+
+
+    <!-- <div class="nav-color-change mx-auto"></div> -->
 
     <!-- modal-menu -->
 
@@ -118,14 +140,14 @@
             <div class="col-12 col-md-6">
                 <div class="row">
                     <div class="col-8 px-0">
-                        <img class="img-fluid img-responsive  photo-grid-image"
+                        <img class="dog-image-1 img-fluid img-responsive  photo-grid-image"
                             src="images/pexels-goochie-poochie-grooming-3299905.jpg" alt="dog-image-1">
                     </div>
                     <div class="col-4 px-0">
                         <img class="img-fluid img-responsive photo-grid-image-2 px-0"
                             src="images/pexels-cory-de-vega-732456.jpg" alt="dog-image-2">
-                        <img class="img-fluid img-responsive photo-grid-image-2" src="images/dog-image-3.png"
-                            alt="dog-image-3">
+                        <img class="hugo-pug-photo img-fluid img-responsive photo-grid-image-2"
+                            src="images/dog-image-3.png" alt="dog-image-3">
                     </div>
                 </div>
             </div>
@@ -317,33 +339,35 @@
             <div class="col-12 col-md-8 mx-auto align-self-center">
                 <div class="row">
                     <div class="col-12 col-md-8 map order-last">
-                        <iframe class="embed-responsive"
+                        <iframe class="embed-responsive "
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9278.132839367696!2d-117.73928276439328!3d33.67404331068925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcdd2ff4230d2f%3A0x2a23b6d72f939b30!2sGreat%20Park%20Blvd%2C%20Irvine%2C%20CA%2092618!5e0!3m2!1sen!2sus!4v1597368386573!5m2!1sen!2sus"
                             width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
                             aria-hidden="false" tabindex="0"></iframe>
                     </div>
-                    <div class="col-12 col-md-4 text-left order-md-last">
+                    <div class="location col-12 col-md-4 text-left order-md-last">
                         <h4>LOCATION</h4>
                         <ul class="list-unstyled">
                             <li>0000 XBARKS THE SPOT <br>
-                                CALIFORNIA <br>
-                                USA <br>
-                                000?01</li>
+                                <span class="lighter-font">
+                                    CALIFORNIA <br>
+                                    USA <br>
+                                    000?01</li>
+                            </span>
                         </ul>
                         <h4>CONTACT</h4>
                         <ul class="list-unstyled">
-                            <li>PHONE NUMBER: 000.11.34.0000 <br>
-                                EMAIL: dogcafe@notanemail.com</li>
+                            <li>PHONE NUMBER: <span class="lighter-font">000.11.34.0000 </span></li>
+                            <li>EMAIL: <span class="lighter-font">dogcafe@notanemail.com </span></li>
                         </ul>
                         <h4>OPENING HOURS</h4>
                         <ul class="list-unstyled opening-hours">
-                            <li>Monday<span class="pull-right">9am-2pm</span></li>
-                            <li>Tuesday<span class="pull-right">9am-2pm</span></li>
-                            <li>Wednesday<span class="pull-right">9am-5pm</span></li>
-                            <li>Thursday<span class="pull-right">9am-5pm</span></li>
-                            <li>Friday<span class="pull-right">9am-5pm</span></li>
-                            <li>Saturday<span class="pull-right">9am-5pm</span></li>
-                            <li>Sunday<span class="pull-right">9am-5pm</span></li>
+                            <li>MONDAY<span class="lighter-font pull-right">9am-2pm</span></li>
+                            <li>TUESDAY<span class="lighter-font pull-right">9am-2pm</span></li>
+                            <li>WEDNESDAY<span class="lighter-font pull-right">9am-5pm</span></li>
+                            <li>THURSDAY<span class="lighter-font pull-right">9am-5pm</span></li>
+                            <li>FRIDAY<span class="lighter-font pull-right">9am-5pm</span></li>
+                            <li>SATURDAY<span class="lighter-font pull-right">9am-5pm</span></li>
+                            <li>SUNDAY<span class="lighter-font pull-right">9am-5pm</span></li>
                         </ul>
                     </div>
                 </div>
@@ -357,7 +381,7 @@
                 <div class="col">
                     <h2>X BARKS THE SPOT</h2>
                     <ul class="list-inline">
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook fa-2x"></i></li>
                         <li class="list-inline-item"><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
                         <li class="list-inline-item"><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
                     </ul>

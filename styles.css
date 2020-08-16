@@ -2,9 +2,15 @@ body{
     
 }
 
-h2,h3,h4,h5,h5,h6{
+h2,h3,h4,h5,h5{
     font-family:'Montserrat', sans-serif;
     font-weight:700;
+}
+
+footer h6{
+    font-size:0.1rem;
+    font-weight:200;
+
 }
 
 h1{
@@ -63,21 +69,27 @@ p{
     color:#1b2838;
 }
 
-.nav-link-white{
-    color:white;
+.hero-text{
+    padding-top:10px;
+    background-color:#d4e1e7 ;
+    margin-bottom: 0;
 }
-.hero-image {
+.navbar-collapse{
+    display: flex;
+    flex-direction: column;
+}
+/* .hero-image {
     padding:0;
     margin:0;
     position: relative;
     background:none;
-}
-.hero-image:after {
+} */
+.hero-image {
     /* padding:0px; */
-    content : "";
-    display: block;
+    /* content : "";
+    display: block; */
     /* position: absolute; */
-    top: 0;
+    /* margin-top: -60px; */
     left: 0;
     background-image: url("images/header-final.jpg");
     background-repeat: no-repeat;
@@ -89,10 +101,22 @@ p{
     /* z-index: -1; */
 }
 
-.nav-color-change{
-    background-color: #1b2838;
-    color: white;
+.fixed-top{
+    margin-top:40px;
 }
+
+.nav-color-change ul li a{
+    color: #1b2838;
+    background-color: yellow;
+    font-weight: 700;
+    margin-top: -40px;
+    transition: margin-top 0.7s, background-color 0.5s;
+}
+
+.navbar .navbar-toggler-icon{
+    background-image:url("images/bars-solid.svg");
+}
+
 /* menu-modal */
 .modal-content{
     background-image:url("images/blue-mountains-larger.jpg");
@@ -144,8 +168,15 @@ p{
 .photo-grid-image-2{
     width:100%;
     height:20vw;
-    object-fit:cover;
+    object-fit:cover; 
 
+} 
+
+.hugo-pug-photo{
+    width:100%;
+    height:20vw;
+    object-fit:cover;
+    object-position: 50% 0%; 
 }
 
 /* cake-baked-treats-carousels */
@@ -178,6 +209,20 @@ p{
     color: white;
 }
 
+/* location */
+.opening-hours{
+    max-width:300px;
+}
+
+.location{
+    font-weight:700;
+    font-size: 0.9rem;
+}
+
+.lighter-font{
+    font-weight:400;
+}
+
 /* footer */
 footer{
     padding:80px 0;
@@ -189,13 +234,15 @@ footer ul li a{
     color: white;
 }
 
-.opening-hours{
-    max-width:300px;
-}
-
 .parallax-footer{
     background-image: url("images/texture-tile-yellow.jpg");
     height:980px;
     background-attachment: fixed;
     background-repeat:repeat;
+}
+
+@media (max-width: 575px) {  
+    .hero-text{
+        display: none;
+    }
 }
