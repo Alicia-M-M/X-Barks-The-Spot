@@ -2,9 +2,21 @@ body{
     
 }
 
-h2,h3,h4,h5,h5{
+h3,h5,h5{
     font-family:'Montserrat', sans-serif;
     font-weight:700;
+}
+
+h2{
+    font-family:'Montserrat', sans-serif;
+    font-weight:900;
+}
+
+h4{
+    font-family:'Montserrat', sans-serif;
+    font-weight:700;
+    letter-spacing: 0.6rem;
+    font-size: calc(40% + 1vw + 1vh);
 }
 
 footer h6{
@@ -35,20 +47,21 @@ p{
 
 .orange-button-styling{
     color:white;
-    height:60px;
-    padding:0 45px;
+    max-height:60px;
+    padding:10px 30px;
     background-color:#F3911D;
     border: 2px solid white;
     border-bottom:7px solid white;
     border-radius:0px;
     font-weight: 700;
-    font-size:1.5rem;
+    font-size:calc(40% + 0.2vw + 1vh);
     letter-spacing: 4px;
 }
 
 .divider-section{
     width:100%;
     max-height:400px;
+    min-height: 300px;
     object-fit:cover;
 }
 
@@ -70,7 +83,7 @@ p{
     padding-left: 10px;
     padding-right: 10px;
 }
-.navbar-nav>li>.nav-link:hover{
+.navbar-nav li .nav-link:hover{
     background-color: #1b2838;
     transition: background-color 0.5s;
     color: #FFFFFF;
@@ -226,20 +239,27 @@ p{
 }
 
 /* cake-baked-treats-carousels */
-.carousel-inner{
-    padding:0 100px;
+
+/* owl-carousel */
+.treats-title-font{
+    font-weight: 900;
+    letter-spacing: 0.6rem;
+}
+.item{
+    max-width: 200px;
+    max-height:400px;
 }
 
 .parallax-baked-treats{
     background-image: url("images/texture-tile-yellow.jpg");
-    height:340px;
+    max-height:500px;
     background-attachment: fixed;
     background-repeat:repeat;
 }
 
 .parallax-cakes{
     background-image: url("images/texture-tile-orange.jpg");
-    height:340px;
+    max-height:500px;
     background-attachment: fixed;
     background-repeat:repeat;
 }
@@ -254,10 +274,35 @@ p{
     background-color: #1b2838;
     color: white;
 }
+.card-header .btn-link{
+    font-size:calc(100% + 3vw + 1vh);
+    font-weight:900;
+    font-family:'Montserrat', sans-serif;
+    letter-spacing: 0.8rem;
+    color: white;
+    padding:0px;
+}
+
+.card-header .btn-link:focus{
+    text-decoration: none;
+    border:none;
+    box-shadow:none;
+}
+
+.collapse .card-body{
+    background-image: url("images/blue-mountains.jpg");
+}
+
 
 /* location */
+.map-size{
+    height:480px;
+}
 .opening-hours{
-    max-width:300px;
+    max-width:400px;
+}
+.adjusted-h4-spacing{
+    letter-spacing: 0.4rem;
 }
 
 .location{
@@ -267,6 +312,13 @@ p{
 
 .lighter-font{
     font-weight:400;
+}
+
+.parallax-location{
+    background-image: url("images/texture-tile-yellow.jpg");
+    /* height:900px; */
+    background-attachment: fixed;
+    background-repeat:repeat;
 }
 
 /* footer */
@@ -280,25 +332,16 @@ footer ul li a{
     color: white;
 }
 
-.parallax-footer{
-    background-image: url("images/texture-tile-yellow.jpg");
-    height:980px;
-    background-attachment: fixed;
-    background-repeat:repeat;
-}
-
 @media (max-width: 575px) {  
     .navbar-expand-sm .navbar-nav .nav-link{
         padding-left:5px;
         font-size:1.6rem;
     }
 
-    .navbar-nav>li>.nav-link:hover{
+    .navbar-nav li .nav-link:hover{
         background-color:transparent;
         transition: background-color 0s;
-        color: #FFFFFF;
-        padding-left:0px;
-        padding-right: 10px;
+        padding-left:5px;
     }
 
     .navbar-mobile{
@@ -316,7 +359,6 @@ footer ul li a{
 
     .fixed-top{
         margin-top:0px;
-        /* padding-top:22px; */
     }
 
     .nav-link{
@@ -328,7 +370,6 @@ footer ul li a{
         color:#FFFFFF;
         top: 54px;
         left: 0;
-        /* padding-top:50px; */
         padding-top:15px;
         padding-left: 15px;
         padding-right: 15px;
@@ -363,12 +404,4 @@ footer ul li a{
 
 }
 
-/* .navbar-toggler>.close {
-    color: white;
-    display:inline;
-    z-index:2; 
-} */
-/* .navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
-    display:none;
-}  */
 }
