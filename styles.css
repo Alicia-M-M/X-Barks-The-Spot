@@ -13,6 +13,10 @@ footer h6{
 
 }
 
+footer h2{
+    letter-spacing: 0.8rem;
+}
+
 h1{
     font-family:'Mr Dafoe', cursive;
     font-size:calc(100% + 9vw + 1vh);
@@ -42,10 +46,6 @@ p{
     letter-spacing: 4px;
 }
 
-/* .column-padding-extra{
-    padding: 150px 0;
-} */
-
 .divider-section{
     width:100%;
     max-height:400px;
@@ -65,19 +65,38 @@ p{
 }
 
 /* header and navbar */
+
+.navbar-expand-sm .navbar-nav .nav-link{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.navbar-nav>li>.nav-link:hover{
+    background-color: #1b2838;
+    transition: background-color 0.5s;
+    color: #FFFFFF;
+    padding-left:10px;
+    padding-right: 10px;
+}
+
 .hero-text, .nav-link{
     color:#1b2838;
 }
 
 .hero-text{
-    padding-top:10px;
-    background-color:#d4e1e7 ;
-    margin-bottom: 0;
+    margin-left:14px;
 }
-.navbar-collapse{
+
+.hero-text-container{
+    padding-top:10px;
+    margin-bottom: 0;
+    background-color:#d4e1e7;
+    font-weight:900;
+    letter-spacing: 0.7rem;
+}
+/* .navbar-collapse{
     display: flex;
     flex-direction: column;
-}
+} */
 /* .hero-image {
     padding:0;
     margin:0;
@@ -96,7 +115,7 @@ p{
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 90vh;
+    height: 70vh;
     /* opacity : 0.2; */
     /* z-index: -1; */
 }
@@ -105,16 +124,35 @@ p{
     margin-top:40px;
 }
 
-.nav-color-change ul li a{
+.nav-color-change ul {
     color: #1b2838;
-    background-color: yellow;
+    background-color:#faf02a;
+    padding:0 14px;
     font-weight: 700;
+    letter-spacing:0.1rem;
     margin-top: -40px;
     transition: margin-top 0.7s, background-color 0.5s;
 }
 
 .navbar .navbar-toggler-icon{
     background-image:url("images/bars-solid.svg");
+}
+
+.navbar-nav{
+    font-family:'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing:0.1rem;
+    width: 554px;
+    justify-content: space-between;
+    padding:0 14px;
+}
+
+/* navbar-toggle-button */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 /* menu-modal */
@@ -159,9 +197,13 @@ p{
 }
 
 /* photo gallery */ 
+.padding-photo-row{
+    padding:0px 2px;
+}
 .photo-grid-image{
     width:100%;
     height:40vw;
+    border:solid white 1px;
     object-fit:cover;
     object-position: 50% 0%; 
 }
@@ -169,8 +211,12 @@ p{
     width:100%;
     height:20vw;
     object-fit:cover; 
-
+    border:solid white 1px;
 } 
+
+.dog-image-1{
+    object-position: 42% 0%; 
+}
 
 .hugo-pug-photo{
     width:100%;
@@ -242,7 +288,87 @@ footer ul li a{
 }
 
 @media (max-width: 575px) {  
-    .hero-text{
-        display: none;
+    .navbar-expand-sm .navbar-nav .nav-link{
+        padding-left:5px;
+        font-size:1.6rem;
     }
+
+    .navbar-nav>li>.nav-link:hover{
+        background-color:transparent;
+        transition: background-color 0s;
+        color: #FFFFFF;
+        padding-left:0px;
+        padding-right: 10px;
+    }
+
+    .navbar-mobile{
+        background-color:#faf02a;
+        transition: background-color 0.5s;
+    }
+    .navbar-toggler{
+        padding:0px;
+        border:none;
+    }
+
+    .navbar-nav{
+        padding-left:0px;
+    }
+
+    .fixed-top{
+        margin-top:0px;
+        /* padding-top:22px; */
+    }
+
+    .nav-link{
+        color: white;
+    }
+    .navbar-collapse {
+        position: fixed;
+        background-color:RGBA(27,40,56,0.84);
+        color:#FFFFFF;
+        top: 54px;
+        left: 0;
+        /* padding-top:50px; */
+        padding-top:15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+        height: 100%;
+        z-index:1;
+    }
+
+    .navbar-collapse.collapsing {
+        left: -75%;
+        transition: height 0s ease;
+        
+    }
+
+    .navbar-collapse.show {
+        left: 0;
+        transition: left 500ms ease-in-out;
+        
+    }
+
+    .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: left 500ms ease-in-out;
+    }
+
+    .navbar-brand{
+        color: #1b2838;
+        margin:0px;
+        font-size: 1.2rem;
+        font-weight:900;
+        letter-spacing: 0.3rem;
+
+}
+
+/* .navbar-toggler>.close {
+    color: white;
+    display:inline;
+    z-index:2; 
+} */
+/* .navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+    display:none;
+}  */
 }
