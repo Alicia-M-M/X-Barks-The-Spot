@@ -3,8 +3,10 @@ body{
 }
 
 h3,h5,h5{
+    margin-right:-0.6rem;
     font-family:'Montserrat', sans-serif;
     font-weight:700;
+    letter-spacing:0.6rem;
 }
 
 h2{
@@ -13,19 +15,22 @@ h2{
 }
 
 h4{
+    margin-right: -0.6rem;
     font-family:'Montserrat', sans-serif;
     font-weight:700;
-    letter-spacing: 0.6rem;
+    letter-spacing: 0.4rem;
     font-size: calc(40% + 1vw + 1vh);
 }
 
 footer h6{
+    font-family:'Montserrat', sans-serif;
     font-size:0.1rem;
     font-weight:200;
 
 }
 
 footer h2{
+    margin-right: -0.8rem;
     letter-spacing: 0.8rem;
 }
 
@@ -36,8 +41,11 @@ h1{
 }
 
 p{
+    margin-right:-0.2rem;
     font-family:'Montserrat', sans-serif;
     font-weight: 400;
+    font-size:calc(20% + 0.5vw + 1vh);;
+    letter-spacing: 0.2rem;
 }
 
 /* general-styling */
@@ -48,7 +56,7 @@ p{
 .orange-button-styling{
     color:white;
     max-height:60px;
-    padding:10px 30px;
+    padding:10px 16px;
     background-color:#F3911D;
     border: 2px solid white;
     border-bottom:7px solid white;
@@ -57,6 +65,26 @@ p{
     font-size:calc(40% + 0.2vw + 1vh);
     letter-spacing: 4px;
 }
+
+.orange-button-styling:hover{
+    background-color:#62a2d3;
+    color:white;
+    transition: 0.5s;
+}
+.orange-button-styling:focus{
+    background-color: #1b2838;
+    text-decoration: none;
+    box-shadow:none;
+}
+
+.icon-styling{
+    font-size:calc(100% + 0.2vw + 1vh);
+}
+
+.orange-button-styling:hover{
+    background-color:
+}
+
 
 .divider-section{
     width:100%;
@@ -265,16 +293,13 @@ p{
 }
 
 /* testimonial accordian */
-.card-header{
-    background-color: #1b2838;
-    border: 1px solid white;
-}
-
 .testimonials-styling{
     background-color: #1b2838;
+    padding:100px 0px;
     color: white;
 }
 .card-header .btn-link{
+    margin-right: -0.8rem;
     font-size:calc(100% + 3vw + 1vh);
     font-weight:900;
     font-family:'Montserrat', sans-serif;
@@ -285,14 +310,46 @@ p{
 
 .card-header .btn-link:focus{
     text-decoration: none;
-    border:none;
     box-shadow:none;
 }
 
-.collapse .card-body{
+.btn-link:hover{
+    text-decoration: none;
+}
+
+.card-header{
+    background:url("images/dark-blue.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat; 
+    border: 1px solid white;
+    transition: background-image 0.4s ease-in-out;
+    /* transition-timing-function: ease-out;
+    transition-duration: 250ms;
+    transition-delay: 3s; */
+} 
+
+.card-header:hover{
+    background:url("images/pexels-goochie-poochie-grooming-3299905.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat; 
+    transition: background-image 0.4s ease-in-out;
+    /* transition-timing-function: ease-out;
+    transition-duration: 250ms; */
+}
+
+.card-body{
     background-image: url("images/blue-mountains.jpg");
 }
 
+.card-body i{
+    color: #F3911D;
+}
+
+.testimonial-text-mw{
+    max-width: 680px;
+}
 
 /* location */
 .map-size{
@@ -404,4 +461,22 @@ footer ul li a{
 
 }
 
+@media (max-width: 412px){
+    .card-header .btn-link{
+        font-size: calc(80% + 1vw + 1vh);
+    }
 }
+
+
+}
+
+@media (max-width: 360px){
+
+.navbar-brand{
+    font-size: 1rem;
+}
+}
+
+
+
+
