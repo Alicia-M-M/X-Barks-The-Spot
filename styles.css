@@ -3,7 +3,7 @@ body{
 }
 
 h3,h5,h5{
-    margin-right:-0.6rem;
+    /* margin-right:-0.6rem; */
     font-family:'Montserrat', sans-serif;
     font-weight:700;
     letter-spacing:0.6rem;
@@ -15,7 +15,7 @@ h2{
 }
 
 h4{
-    margin-right: -0.6rem;
+    /* margin-right: -0.6rem; */
     font-family:'Montserrat', sans-serif;
     font-weight:700;
     letter-spacing: 0.4rem;
@@ -30,7 +30,7 @@ footer h6{
 }
 
 footer h2{
-    margin-right: -0.8rem;
+    /* margin-right: -0.8rem; */
     letter-spacing: 0.8rem;
 }
 
@@ -41,11 +41,11 @@ h1{
 }
 
 p{
-    margin-right:-0.2rem;
+    /* margin-right:-0.2rem; */
     font-family:'Montserrat', sans-serif;
     font-weight: 400;
     font-size:calc(20% + 0.5vw + 1vh);;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
 }
 
 /* general-styling */
@@ -64,6 +64,7 @@ p{
     font-weight: 700;
     font-size:calc(40% + 0.2vw + 1vh);
     letter-spacing: 4px;
+    box-shadow: 5px 5px 7px 1px rgba(0,0,0,0.4);
 }
 
 .orange-button-styling:hover{
@@ -172,7 +173,8 @@ p{
     font-weight: 700;
     letter-spacing:0.1rem;
     margin-top: -40px;
-    transition: margin-top 0.7s, background-color 0.5s;
+    transition: margin-top 0.7s, background-color 0.5s, box-shadow 0.5s;
+    box-shadow: 5px 5px 7px 1px rgba(0,0,0,0.4);
 }
 
 .navbar .navbar-toggler-icon{
@@ -197,6 +199,75 @@ p{
 }
 
 /* menu-modal */
+
+.table-styling{
+    color:#1b2838;
+    background-image: url("images/texture-tile-blue-v1.jpg");
+    background-repeat: repeat;
+    font-family:'Montserrat', sans-serif;
+    padding:14px;
+    margin-bottom: 74px;
+    box-shadow: 5px 5px 7px 1px rgba(0,0,0,0.4);
+}
+
+.table-styling2{
+    color:#1b2838;
+    background-image: url("images/texture-tile-peach.jpg");
+    background-repeat: repeat;
+    font-family:'Montserrat', sans-serif;
+    padding:14px;
+    margin-top:60px;
+    box-shadow: 5px 5px 7px 1px rgba(0,0,0,0.4);
+}
+
+.table-styling2 h5, .table-styling h5{
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+.table-wrap{
+    position: relative;
+    margin-top: 40px;
+}
+.table-bold-text{
+    font-weight: 600;
+}
+
+.table-styling th .table-styling2 th{
+    border: none;
+}
+
+.table-styling thead th, .table-styling2 thead th{
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.table-styling tbody td, .table-styling2 tbody td{
+    border: none;
+}
+
+.menu-header{
+    color: #FFFFFF;
+    font-size: 3.6rem;
+    position: absolute;
+    font-family: 'Mr Dafoe', cursive;
+    top:-34px;
+}
+.menu-header2{
+    color: #FFFFFF;
+    font-size: 3.6rem;
+    position: absolute;
+    font-family: 'Mr Dafoe', cursive;
+    top:-48px;
+}
+
+.tea-cup-table{
+    width:10vw;
+}
+
+.bone-singular-3-table{
+    width: 8vw;
+}
 .modal-content{
     background-image:url("images/blue-mountains-larger.jpg");
     
@@ -215,26 +286,54 @@ p{
 }
 
 /* welcome */
-.welcome-rectangle{
-    max-width:600px;
-    flex-direction:column;
-    position: relative;
-}
-
 .welcome-text{
     position: absolute;
-    top:45px;
+    top: -100px;
     z-index:5;
+} 
+
+.tea-cup{
+    position: absolute;
+    top:30%;
+    left:70%;
+    z-index: 10;
+    width:20vw;
+}
+
+.bone-singular-3{
+    position: absolute;
+    top:5%;
+    left:20%;
+    z-index: 10;
+    width:10vw;
+}
+
+.welcome-card-wrapper{
+    position: relative;
 }
 
 .welcome-divider-section{
     width:100%;
     max-height:800px;
+    min-height:300px;
     object-fit:cover;
+    /* z-index: -1; */
 }
 
-.blueMountains{
-    z-index: -1;
+.welcome-card-styling{
+    background-image:url("images/texture-tile-yellow.jpg");
+    background-repeat: repeat;
+    color: #F3911D;
+    position: absolute;
+    box-shadow: 5px 5px 7px 1px rgba(0,0,0,0.4);
+    max-height: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.welcome-card-styling p{
+    color:  #1b2838;
 }
 
 /* photo gallery */ 
@@ -299,7 +398,7 @@ p{
     color: white;
 }
 .card-header .btn-link{
-    margin-right: -0.8rem;
+    /* margin-right: -0.8rem; */
     font-size:calc(100% + 3vw + 1vh);
     font-weight:900;
     font-family:'Montserrat', sans-serif;
@@ -308,7 +407,7 @@ p{
     padding:0px;
 }
 
-.card-header .btn-link:focus{
+.accordion .card .card-header .btn-link:focus{
     text-decoration: none;
     box-shadow:none;
 }
@@ -317,33 +416,29 @@ p{
     text-decoration: none;
 }
 
-.card-header{
+.accordion .card .card-header{
     background:url("images/dark-blue.png");
     background-size:cover;
     background-position:center;
     background-repeat: no-repeat; 
     border: 1px solid white;
     transition: background-image 0.4s ease-in-out;
-    /* transition-timing-function: ease-out;
-    transition-duration: 250ms;
-    transition-delay: 3s; */
 } 
 
-.card-header:hover{
+
+.accordion .card .card-header:hover{
     background:url("images/pexels-goochie-poochie-grooming-3299905.jpg");
     background-size:cover;
     background-position:center;
     background-repeat: no-repeat; 
     transition: background-image 0.4s ease-in-out;
-    /* transition-timing-function: ease-out;
-    transition-duration: 250ms; */
 }
 
-.card-body{
+.accordion .card .card-body{
     background-image: url("images/blue-mountains.jpg");
 }
 
-.card-body i{
+.accordion .card .card-body i{
     color: #F3911D;
 }
 
@@ -404,6 +499,7 @@ footer ul li a{
     .navbar-mobile{
         background-color:#faf02a;
         transition: background-color 0.5s;
+        box-shadow: 5px 5px 7px 1px rgba(0,0,0,0.4);
     }
     .navbar-toggler{
         padding:0px;
@@ -474,6 +570,10 @@ footer ul li a{
 
 .navbar-brand{
     font-size: 1rem;
+}
+
+.navbar-collapse{
+    top:50px;
 }
 }
 
