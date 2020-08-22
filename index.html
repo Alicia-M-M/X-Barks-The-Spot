@@ -26,26 +26,6 @@
 </head>
 
 <body>
-
-    <!-- <nav class="navbar fixed-top navbar-expand-sm">
-        <div class="container-fluid">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#mainNavBar">
-                <span class="navbar-toggler-icon"> </span>
-            </button>
-            <div class="collapse navbar-collapse" id="mainNavBar">
-                <h2 class="hero-text">X BARKS THE SPOT</h2>
-                <ul class="navbar-nav mx-auto">
-                    <li nav-item active><a class="nav-link" href="#">HOME</a></li>
-                    <li nav-item><a class="nav-link" data-toggle="modal" data-target="#menuModalLong">MENU</a></li>
-                    <li nav-item><a class="nav-link" href="#">CONTACT</a></li>
-                    <li nav-item><a class="nav-link" href="#">ONLINE</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="hero-image">
-    </div> -->
     <div class="container-fluid hero-text-container text-center">
         <div class="row">
             <div class="col">
@@ -84,13 +64,17 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="menuModalLongTitle"></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                        <span class="orange-button-styling-modal" aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <div class="table-responsive table-styling">
-                        <img class="tea-cup-table" src="images/tea-cup-v1.png" alt="tea-cup">
-                        <h5 class="menu-header">Cafe Menu</h5>
+                        <div class="flex-container-table-title">
+                            <h5 class="menu-header">Cafe Menu</h5>
+                            <img class="tea-cup-table" src="images/tea-cup-v1.png" alt="tea-cup">
+
+                        </div>
+
                         <table class="table">
                             <thead>
                                 <tr>
@@ -190,8 +174,10 @@
                     </div>
                     <div class="table-wrap">
                         <div class="table-responsive table-styling2">
-                            <img class="bone-singular-3-table" src="images/bone-singular-3.png" alt="bone-3">
-                            <h5 class="menu-header2">Merchandise</h5>
+                            <div class="flex-container-table-title2">
+                                <h5 class="menu-header2">Merchandise</h5>
+                                <img class="bone-singular-3-table" src="images/singular-bone.png" alt="bone">
+                            </div>
                             <table class="table">
                                 <thead>
                                     <tr>
@@ -267,13 +253,16 @@
             <div class="col px-0  welcome-card-wrapper">
                 <div class="card welcome-card-styling col-10 col-md-6">
                     <img class="tea-cup" src="images/tea-cup-v1.png" alt="tea-cup">
-                    <img class="bone-singular-3" src="images/bone-singular-3.png" alt="bone-3">
+                    <img class="bone-singular-2" src="images/bone-singular-2.png" alt="bone-3">
+                    <img class="bone-singular-3-v1" src="images/bone-singular-3-v1.png" alt="bone-3">
+                    <img class="singular-bone-v1" src="images/singular-bone-v1.png" alt="singular-bone">
                     <div class="welcome-text">
                         <h1>Welcome</h1>
                     </div>
                     <div class="card-body mx-auto">
                         <h4>A PLACE FOR DOGS & HUMANS</h4>
-                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text.It has roots in a
+                        <p class="welcome-section-paragraph">Contrary to popular belief, Lorem Ipsum is not simply
+                            random text.It has roots in a
                             piece
                             of classical Latin literature from 45 BC, making it over 2000 years old.
                         </p>
@@ -328,11 +317,11 @@
             <div class="col px-0 align-self-center">
                 <h4 class="treats-title-font">BAKED TREATS</h4>
                 <div id=baked-treats-carousel class="owl-carousel owl-theme">
-                    <div class="item"><img src="images/dog-bone-1.png" alt=""></div>
-                    <div class="item"><img src="images/dog-bone-1.png" alt=""></div>
-                    <div class="item"><img src="images/dog-bone-1.png" alt=""></div>
-                    <div class="item"><img src="images/dog-bone-1.png" alt=""></div>
-                    <div class="item"><img src="images/dog-bone-1.png" alt=""></div>
+                    <div class="item"><img src="images/dog-bone-1.png" alt="dog-bone-1"></div>
+                    <div class="item"><img src="images/dog-bone-2.png" alt="dog-bone-2"></div>
+                    <div class="item"><img src="images/dog-bone-3.png" alt="dog-bone-3"></div>
+                    <div class="item"><img src="images/dog-bone-1.png" alt="dog-bone-1"></div>
+                    <div class="item"><img src="images/dog-bone-2.png" alt="dog-bone-2"></div>
                 </div>
             </div>
         </div>
@@ -341,11 +330,11 @@
             <div class="col px-0 align-self-center">
                 <h4 class="treats-title-font">CAKES</h4>
                 <div id=cakes-carousel class="owl-carousel owl-theme">
-                    <div class="item"><img src="images/cupcake-1.png" alt=""></div>
-                    <div class="item"><img src="images/cupcake-1.png" alt=""></div>
-                    <div class="item"><img src="images/cupcake-1.png" alt=""></div>
-                    <div class="item"><img src="images/cupcake-1.png" alt=""></div>
-                    <div class="item"><img src="images/cupcake-1.png" alt=""></div>
+                    <div class="item"><img src="images/cupcake-1.png" alt="cupcake-1"></div>
+                    <div class="item"><img src="images/cupcake-2.png" alt="cupcake-2"></div>
+                    <div class="item"><img src="images/cupcake-3.png" alt="cupcake-3"></div>
+                    <div class="item"><img src="images/cupcake-1.png" alt="cupcake-1"></div>
+                    <div class="item"><img src="images/cupcake-2.png" alt="cupcake-2"></div>
                 </div>
             </div>
         </div>
@@ -366,7 +355,7 @@
                 <h4 class="pb-3">TESTIMONIALS:</h4>
                 <div class="accordion" id="accordionExample">
                     <div class="card">
-                        <div class="card-header py-5" id="headingOne">
+                        <div class="card-header card-header-photo-1 py-5" id="headingOne">
                             <h2 class="mb-0">
                                 <button class="btn btn-link" type="button" data-toggle="collapse"
                                     data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -392,7 +381,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header py-5" id="headingTwo">
+                        <div class="card-header card-header-photo-2 py-5" id="headingTwo">
                             <h2 class="mb-0">
                                 <button class="btn btn-link" type="button" data-toggle="collapse"
                                     data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
@@ -405,7 +394,7 @@
                             data-parent="#accordionExample">
 
                             <div class="card-body p-4 border border-white">
-                                <h4 class="pb-2">MAX IS A DOG OF HIGH TASTE</h4>
+                                <h4 class="pb-2">HUGO IS A DOG OF HIGH TASTE</h4>
                                 <p class="testimonial-text-mw mx-auto">
                                     “I LOVE X BARKS THE SPOT. ALL MY BUDS COME HERE, AND WE HANG OUT. PLUS,
                                     THE TREATS
@@ -420,7 +409,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header py-5" id="headingThree">
+                        <div class="card-header card-header-photo-3 py-5" id="headingThree">
                             <h2 class="mb-0">
                                 <button class="btn btn-link" type="button" data-toggle="collapse"
                                     data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
@@ -431,7 +420,7 @@
 
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
                             <div class="card-body p-4 border border-white">
-                                <h4 class="pb-2">MAX IS A DOG OF HIGH TASTE</h4>
+                                <h4 class="pb-2">ARORA IS A DOG OF HIGH TASTE</h4>
                                 <p class="testimonial-text-mw mx-auto">
                                     “I LOVE X BARKS THE SPOT. ALL MY BUDS COME HERE, AND WE HANG OUT. PLUS,
                                     THE TREATS
@@ -446,7 +435,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header py-5" id="headingFour">
+                        <div class="card-header card-header-photo-4 py-5" id="headingFour">
                             <h2 class="mb-0">
                                 <button class="btn btn-link" type="button" data-toggle="collapse"
                                     data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
@@ -457,7 +446,7 @@
 
                         <div id="collapseFour" class="collapse" aria-labelledby="headingFour">
                             <div class="card-body p-4 border border-white">
-                                <h4 class="pb-2">MAX IS A DOG OF HIGH TASTE</h4>
+                                <h4 class="pb-2">KEVIN IS A DOG OF HIGH TASTE</h4>
                                 <p class="testimonial-text-mw mx-auto">
                                     “I LOVE X BARKS THE SPOT. ALL MY BUDS COME HERE, AND WE HANG OUT. PLUS,
                                     THE TREATS
@@ -479,7 +468,7 @@
             <div class="col-10 col-md-8 mx-auto align-self-center">
                 <div class="row ">
                     <div class="col-12 col-xl-8 map order-last ">
-                        <iframe class="embed-responsive map-size"
+                        <iframe class="embed-responsive map-size map-tint"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9278.132839367696!2d-117.73928276439328!3d33.67404331068925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcdd2ff4230d2f%3A0x2a23b6d72f939b30!2sGreat%20Park%20Blvd%2C%20Irvine%2C%20CA%2092618!5e0!3m2!1sen!2sus!4v1597368386573!5m2!1sen!2sus"
                             width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
                             aria-hidden="false" tabindex="0"></iframe>

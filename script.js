@@ -27,33 +27,20 @@ $(document).ready(function () {
 
 
         parallax('.tea-cup', window.scrollY, 0.1);
-        parallax('.bone-singular-3', window.scrollY, 0.1);
+        parallax('.bone-singular-3-v1', window.scrollY, 0.2);
+        parallax('.bone-singular-2', window.scrollY, 0.1);
+        parallax('.singular-bone-v1', window.scrollY, 0.1);
 
     });
 
-    // const imageDisplay = document.getElementByClass("card-header");
-    // imageDisplay.addEventListener('onclick', showImage);
 
-    // function showImage() {
-    //     if (imageDisplay === "none") {
-    //         imageDisplay.style.display = "block"
-    //     }else{
-    //         document.getElementByClass("clickimage").style.display = "none"
-    //     }
+    // const el = document.getElementByClass("btn-link");
+    // el.addEventListener("click", showImage);
 
-    // };
+    // function showImage(){
+    //     $("card-header").addClass("red")
+    // }
 
-    // $(function() {
-    //     $(".card-header").click(function(){
-    //         $(this).addClass(".card-head2");
-    //         $(this).removeClass(".card-head");
-    //     });
-    // });
-
-    // $('.collapse').on(shown.bs.collapse, function(){
-    //     $(".btn-link").click(function(){
-    //     $(".card-header").collapse("show");
-    // })
 });
 
 
