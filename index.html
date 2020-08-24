@@ -17,9 +17,9 @@
     <!-- mr-dafoe -->
     <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
     <!-- styles -->
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="/owl.carousel.min.css">
-    <link rel="stylesheet" href="/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="/styles/owl.theme.default.min.css">
 
 
     <title>X Barks The Spot</title>
@@ -29,6 +29,7 @@
     <div class="container-fluid hero-text-container text-center">
         <div class="row">
             <div class="col">
+                <a id="Home"></a>
                 <h2 class="hero-text d-none d-sm-block">X BARKS THE SPOT</h2>
             </div>
         </div>
@@ -38,14 +39,13 @@
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavBar">
                 <span class="navbar-toggler-icon"></span>
-                <!-- <span class="close">X</span> -->
             </button>
             <a class="navbar-brand ml-auto d-block d-sm-none" href="#">X BARKS THE SPOT</a>
             <div class="collapse navbar-collapse" id="mainNavBar">
                 <ul class="navbar-nav mx-auto">
-                    <li nav-item active><a class="nav-link" href="#">HOME</a></li>
+                    <li nav-item active><a class="nav-link" href="#Home">HOME</a></li>
                     <li nav-item><a class="nav-link" data-toggle="modal" data-target="#menuModalLong">MENU</a></li>
-                    <li nav-item><a class="nav-link" href="#">CONTACT</a></li>
+                    <li nav-item><a class="nav-link" href="#contact-area">CONTACT</a></li>
                     <li nav-item><a class="nav-link" href="#">ONLINE ORDERING</a></li>
                 </ul>
             </div>
@@ -72,9 +72,7 @@
                         <div class="flex-container-table-title">
                             <h5 class="menu-header">Cafe Menu</h5>
                             <img class="tea-cup-table" src="images/tea-cup-v1.png" alt="tea-cup">
-
                         </div>
-
                         <table class="table">
                             <thead>
                                 <tr>
@@ -345,7 +343,8 @@
             </div>
             <div class="col-12 divider-section-text">
                 <h4 class="py-3">VIEW OUR FULL MENU:</h4>
-                <a href="#" class="btn orange-button-styling align-self-center"><i
+                <a data-toggle="modal" data-target="#menuModalLong"
+                    class="btn orange-button-styling align-self-center"><i
                         class="far fa-envelope icon-styling align-middle pr-2"></i>MENU</a>
             </div>
         </div>
@@ -464,6 +463,7 @@
             </div>
         </div>
         <!-- map-and-contact -->
+        <a id="contact-area"></a>
         <div class="row row-margin-top parallax-location py-4 py-md-5">
             <div class="col-10 col-md-8 mx-auto align-self-center">
                 <div class="row ">
@@ -532,21 +532,15 @@
         </div>
     </footer>
 
-
-
-
     <!-- the below below the footer -->
-    <!-- javascript files -->
-
-
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <script src="/script.js"></script>
-    <script src="/owl.carousel.min.js"></script>
-    <script src="/jqcarousel.js"></script>
+    <!-- javascript files -->
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/owl.carousel.min.js"></script>
+    <script src="/scripts/jqcarousel.js"></script>
 
 
 </body>
