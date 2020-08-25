@@ -44,7 +44,8 @@
             <div class="collapse navbar-collapse" id="mainNavBar">
                 <ul class="navbar-nav mx-auto">
                     <li nav-item active><a class="nav-link" href="#Home">HOME</a></li>
-                    <li nav-item><a class="nav-link" data-toggle="modal" data-target="#menuModalLong">MENU</a></li>
+                    <li nav-item><a class="nav-link" id="menuModalLongButton">MENU</a></li>
+                    <!-- removed from menu nav item data-toggle="modal" data-target="#menuModalLong" -->
                     <li nav-item><a class="nav-link" href="#contact-area">CONTACT</a></li>
                     <li nav-item><a class="nav-link" href="#">ONLINE ORDERING</a></li>
                 </ul>
@@ -242,6 +243,94 @@
         </div>
     </div>
 
+    <!-- modal-subscribe-form -->
+    <div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="orange-button-styling-modal" aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row pt-4">
+                        <div class="col">
+                            <div class="card subscribe-modal-card">
+                                <div class="card-body">
+                                    <h5 class="modal-title subscribe-header">Subscribe</h5>
+                                    <h6 class="subscribe-card-text-header">
+                                        SIGN UP FOR OUR NEWSLETTER!
+                                    </h6>
+                                    <p class="subscribe-header-p-tag">
+                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
+                                        in a piece of classical Latin literature from 45 BC, making it over 2000 years
+                                        old.
+                                    </p>
+                                    <h6 class="subscribe-card-text-header">
+                                        Complete the form Below to subscribe!
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="row">
+                            <div class="form-group col-md-6 subscribe-form-styling">
+                                <label for="inputFirstName">FIRST NAME*</label>
+                                <input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
+                            </div>
+                            <div class="form-group col-md-6 subscribe-form-styling">
+                                <label for="inputLastName">LAST NAME</label>
+                                <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col subscribe-form-styling">
+                                <label for="inputEmail4">EMAIL*</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col subscribe-form-styling">
+                                <label for="inputPhone">PHONE</label>
+                                <input type="tel" class="form-control" id="inputPhone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col subscribe-form-styling">
+                                <label for="inputDOB">DATE OF BIRTH</label>
+                                <input type="date" id="date" name="date" class="form-control" id="inputDOB"
+                                    placeholder="value">
+                            </div>
+                        </div>
+
+                        <div class="form-group subscribe-info-text">
+                            <h6>I'M INTERESTED TO RECIEVE INFORMATION ON:</h6>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    EVENTS AND INFORMATION
+                                </label>
+                            </div>
+                            <div class="form-check ">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    NEW PRODUCTS AND SERVICES
+                                </label>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a href="#" class="btn orange-button-styling"><i
+                                    class="far fa-envelope icon-styling align-middle pr-2"></i>SUBSCRIBE</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- main section -->
@@ -306,7 +395,7 @@
             </div>
             <div class="col-12 divider-section-text">
                 <h4 class="py-3">SIGN UP TO OUR <br> MONTHLY NEWSLETTER:</h4>
-                <a href="#" class="btn orange-button-styling align-self-center"><i
+                <a href="#" id="subscribeModalButton" class="btn orange-button-styling align-self-center"><i
                         class="far fa-envelope icon-styling align-middle pr-2"></i>NEWSLETTER</a>
             </div>
         </div>

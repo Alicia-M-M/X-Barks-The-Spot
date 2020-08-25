@@ -1,4 +1,4 @@
-
+// navbar
 $(document).ready(function () {
 
     $(window).scroll(function () {
@@ -18,6 +18,7 @@ $(document).ready(function () {
 
     });
 
+    // welcome-area-parallax
     function parallax(element, distance, speed) {
         const item = document.querySelector(element);
         item.style.transform = `translateY(${distance * speed}px)`;
@@ -33,14 +34,13 @@ $(document).ready(function () {
 
     });
 
-
-    // const el = document.getElementByClass("btn-link");
-    // el.addEventListener("click", showImage);
-
-    // function showImage(){
-    //     $("card-header").addClass("red")
-    // }
-
+    // modal-menu modal-subscribe
+    $("#menuModalLongButton").click(function () {
+        $("#menuModalLong").modal("show")
+    });
+    $("#subscribeModalButton").click(function () {
+        $("#subscribeModal").modal("show")
+    });
 });
 
 
