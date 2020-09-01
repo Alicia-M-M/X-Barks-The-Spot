@@ -41,6 +41,27 @@ $(document).ready(function () {
     $("#subscribeModalButton").click(function () {
         $("#subscribeModal").modal("show")
     });
+
+    // sort-cart
+    $('.list').click(function () {
+        const value = $(this).attr('data-filter');
+        if (value == 'all') {
+            $('.itemBox').show('1000');
+        } else if (value == 'dog') {
+            $('.dogs').show('1000');
+            $('.humans').hide('1000');
+        } else if (value == 'human') {
+            $('.humans').show('1000');
+            $('.dogs').hide('1000');
+        } else {
+            $('.itemBox').not('.' + value).hide('1000');
+            $('.itemBox').filter('.' + value).show('1000');
+        }
+    })
+
+    $('.list').click(function () {
+        $(this).addClass('active').siblings().removeClass('active');
+    })
 });
 
 
