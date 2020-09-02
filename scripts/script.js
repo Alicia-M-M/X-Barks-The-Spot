@@ -62,6 +62,10 @@ $(document).ready(function () {
     $('.list').click(function () {
         $(this).addClass('active').siblings().removeClass('active');
     })
+
+    // date on footer
+    var date = new Date().getFullYear();
+    document.getElementById("date-info").innerHTML = date;
 });
 
 

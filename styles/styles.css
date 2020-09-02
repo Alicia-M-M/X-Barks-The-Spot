@@ -81,14 +81,13 @@ p{
 .orange-button-styling-modal{
     color:white;
     max-height:60px;
-    padding:10px 16px;
+    padding:6px 8px;
     background-color:#F3911D;
     border: 2px solid white;
     border-radius:0px;
     font-weight: 700;
     font-size:calc(40% + 0.2vw + 1vh);
-    letter-spacing: 4px;
-    box-shadow: 2px 2px #fff;
+    /* letter-spacing: 4px; */
 }
 
 :focus{
@@ -100,8 +99,6 @@ p{
     background: #62a2d3;
     color: white;
     transition: 0.5s;
-    transform: translateY(4px);
-    box-shadow: 0px 2px 1px #fff;
 }
 
 .orange-button-styling:hover{
@@ -303,6 +300,10 @@ p{
     border:none;
 }
 
+.modal-header .close{
+    padding-top:16px;
+}
+
 /* subscribe-modal-form */
 
 .form-control{
@@ -330,7 +331,7 @@ p{
 .subscribe-header{
     position: absolute;
     z-index: 20;
-    top:-56px;
+    top:-58px;
     left:0px;
     font-weight:400;
     letter-spacing: 0;
@@ -338,12 +339,20 @@ p{
 
 .subscribe-header-p-tag{
     margin-bottom:0px;
+    font-size:calc(20% + 0.2vw + 1vh);
 }
 .subscribe-card-text-header{
     color:#F3911D;
     font-weight: 700;
+    font-size:calc(50% + 0.8vw + 1vh);
     letter-spacing: 0.4rem;
     margin:0px;
+}
+
+.subscribe-card-text-header-2{
+    color:#1b2838;
+    font-family:'Mr Dafoe', cursive;
+    font-size:calc(40% + 0.8vw + 1vh);
 }
 
 .subscribe-modal-card{
@@ -618,6 +627,10 @@ footer ul li a{
     color: white;
 }
 
+footer ul li a:hover{
+    color:#62a2d3;
+    transition:0.5s;
+}
 /* cart */
 .cart-row-styling{
     background-color:#d4e1e7;
@@ -867,6 +880,8 @@ footer ul li a{
     bottom:20vw;
 }
 
+}
+
 @media (max-width: 768px){
     /* welcome-area */
 .tea-cup{
@@ -974,6 +989,11 @@ footer ul li a{
 
 }
 
+.navbar-brand:hover{
+    color: #1b2838;
+    cursor:default;
+}
+
 @media (max-width: 550px){
     /* welcome-area */
 
@@ -1042,6 +1062,11 @@ footer ul li a{
 .menu-header2{
     top:-32px;
     font-size: 3rem;
+}
+
+/* subscribe-text */
+.subscribe-card-text-header{
+    font-size: calc(20% + 0.8vw + 1vh);
 }
 }
 
