@@ -421,9 +421,9 @@ p{
     width:14vw;
 }
 
-.welcome-card-wrapper{
+/* .welcome-card-wrapper{
     position: relative;
-}
+} */
 
 .welcome-divider-section{
     width:100%;
@@ -638,7 +638,7 @@ footer ul li a:hover{
     background-repeat: repeat;
     background-size: none;
     width: 100%;
-    height: 50vh;
+    height: 30vh;
 }
 
 .hero-text-ordering{
@@ -647,6 +647,35 @@ footer ul li a:hover{
     background-size: none;
     width: 100%;
 }
+
+/* fact-section */
+.ordering-online-divider-section{
+    max-height:300px;
+    min-height:300px;
+}
+
+.source-name-info{
+    /* font-weight: 700; */
+    font-size:0.6rem;
+}
+/* ordering-online-header-card */
+.ordering-online-card-styling{
+    background-image:url("../images/texture-tile-yellow.jpg");
+    background-repeat: repeat;
+    color: #F3911D;
+    position: absolute;
+    box-shadow: 5px 5px 7px 1px rgba(0,0,0,0.4);
+    max-height: 250px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius:0rem;
+}
+
+.ordering-online-card-styling p{
+    color:  #1b2838;
+}
+
 /* cart */
 .cart-row-styling{
     background-color:#d4e1e7;
